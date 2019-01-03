@@ -4,6 +4,7 @@ var bot = new Discord.Client()
 
 bot.on('ready', function() {
     console.log(bot.user.username + ' : connected.');
+    bot.user.setGame('hunting with Catti Brie')
 });
 
 bot.on('message', function(message) {
