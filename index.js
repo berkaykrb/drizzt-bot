@@ -152,4 +152,4 @@ bot.on('message', function(message) {
 
 });
 
-bot.login('NTI5NjM1NjA3NjczMTc2MDc0.Dwz-iA.VqPpoe5FOBhOC48dApqpt83kw3g');
+bot.login('');
