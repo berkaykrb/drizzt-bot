@@ -10,10 +10,10 @@ bot.on('message', function(message) {
 
     if (message.content === "$loop") { 
 
- // let ccmRole = message.guild.roles.get("527968579283320842");
+ // let ccmRole = message.guild.roles.get(process.env.CCMROLE_ID);
  // (message.member.roles.has(ccmRole.id) ||
 
- let privtenRole = message.guild.roles.get("528028157564157953");
+ let privtenRole = message.guild.roles.get(process.env.PRIVTENROLE_ID);
 
     if (message.member.roles.has(privtenRole.id)) {
 
