@@ -60,38 +60,26 @@ bot.on('message', function(message) {
     }
 
   if (message.content.toLowerCase() === '!about') {
-    message.channel.send('This bot was created by **Berkayk#2525**');
+    message.channel.send('This bot was created for fun by **Berkayk#2525**');
   }
 
-  if (message.content.toLowerCase() === 'kylie') {
-    message.channel.send('noob');
+  if (message.content.toLowerCase() === 'kylie' || message.content.toLowerCase() === 'lost' || message.content.toLowerCase() === 'lostwithdark') {
+    message.channel.send('really noob');
   }
 
-  if (message.content.toLowerCase() === 'lost') {
-    message.channel.send('noob');
+  if (message.content.toLowerCase() === 'sythers' || message.content.toLowerCase() === 'olivia' || message.content.toLowerCase() === 'luhset') {
+    message.channel.send('big noob olivia');
+  }
+    
+  if (message.content.toLowerCase() === 'pro') {
+    message.channel.send('who called Berk here?');
+  }
+        
+  if (message.content.toLowerCase() === 'noob') {
+    message.channel.send('who called Kylie here?');
   }
 
-  if (message.content.toLowerCase() === 'lostwithdark') {
-    message.channel.send('noob');
-  }
-
-  if (message.content.toLowerCase() === 'sythers') {
-    message.channel.send('noob');
-  }
-
-  if (message.content.toLowerCase() === 'olivia') {
-    message.channel.send('noob');
-  }
-
-  if (message.content.toLowerCase() === 'luhset') {
-    message.channel.send('noob');
-  }
-
-  if (message.content.toLowerCase() === 'berk') {
-    message.channel.send('pro');
-  }
-
-  if (message.content.toLowerCase() === 'berkayk') {
+  if (message.content.toLowerCase() === 'berk' || message.content.toLowerCase() === 'berkayk' || message.content.toLowerCase() === 'berkay') {
     message.channel.send('pro');
   }
 
@@ -99,59 +87,23 @@ bot.on('message', function(message) {
     message.channel.send('ma boi');
   }
     
-  if (message.content.toLowerCase() === 'tr') {
+  if (message.content.toLowerCase() === 'tr' || message.content.toLowerCase() === 'turkey') {
     message.channel.send(':flag_tr:');
   }
 
-  if (message.content.toLowerCase() === 'turkey') {
-    message.channel.send(':flag_tr:');
-  }
-
-  if (message.content.toLowerCase() === 'usa') {
+  if (message.content.toLowerCase() === 'usa' || message.content.toLowerCase() === 'america' || message.content.toLowerCase() === 'us' || message.content.toLowerCase() === 'united states') {
     message.channel.send(':flag_um:');
   }
 
-  if (message.content.toLowerCase() === 'america') {
-    message.channel.send(':flag_um:');
-  }
-
-  if (message.content.toLowerCase() === 'us') {
-    message.channel.send(':flag_um:');
-  }
-
-  if (message.content.toLowerCase() === 'united states') {
-    message.channel.send(':flag_um:');
-  }
-
-  if (message.content.toLowerCase() === 'de') {
+  if (message.content.toLowerCase() === 'de' || message.content.toLowerCase() === 'germany') {
     message.channel.send(':flag_de:');
   }
-
-  if (message.content.toLowerCase() === 'germany') {
-    message.channel.send(':flag_de:');
-  }
-
-  if (message.content.toLowerCase() === 'en') {
+    
+  if (message.content.toLowerCase() === 'en' || message.content.toLowerCase() === 'england' || message.content.toLowerCase() === 'britain') {
     message.channel.send(':flag_gb:');
   }
 
-  if (message.content.toLowerCase() === 'england') {
-    message.channel.send(':flag_gb:');
-  }
-
-  if (message.content.toLowerCase() === 'britain') {
-    message.channel.send(':flag_gb:');
-  }
-
-  if (message.content.toLowerCase() === 'drizzt') {
-    message.channel.send('**Change is not always growth, but growth is often rooted in change.**\n-*Drizzt Do Urden*');
-  }
-
-  if (message.content.toLowerCase() === 'drizzt do urden') {
-    message.channel.send('**Change is not always growth, but growth is often rooted in change.**\n-*Drizzt Do Urden*');
-  }
-
-  if (message.content.toLowerCase() === 'drizztdourden') {
+  if (message.content.toLowerCase() === 'drizzt' || message.content.toLowerCase() === 'drizzt do urden' || message.content.toLowerCase() === 'drizztdourden') {
     message.channel.send('**Change is not always growth, but growth is often rooted in change.**\n-*Drizzt Do Urden*');
   }
 
