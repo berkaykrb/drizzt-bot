@@ -106,6 +106,10 @@ bot.on('message', function(message) {
   if (message.content.toLowerCase() === 'drizzt' || message.content.toLowerCase() === 'drizzt do urden' || message.content.toLowerCase() === 'drizztdourden') {
     message.channel.send('**Change is not always growth, but growth is often rooted in change.**\n-*Drizzt Do Urden*');
   }
+    
+   if (message.content.toLowerCase() === 'catti brie' || message.content.toLowerCase() === 'cattibrie') {
+    message.channel.send(':heart:');
+  }
 
 });
 
