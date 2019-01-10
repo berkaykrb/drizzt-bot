@@ -95,7 +95,7 @@ bot.on('message', function(message) {
     message.channel.send('pro');
   }
 
-   if (message.content.toLowerCase() === 'xqr' || '+xqr' || 'chair' || 'inval' || 'invalnorious') {
+ //  if (message.content.toLowerCase() === 'xqr' || '+xqr' || 'chair' || 'inval' || 'invalnorious') {
     message.channel.send('noob');
   }
     
