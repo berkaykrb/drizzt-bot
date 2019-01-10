@@ -96,7 +96,7 @@ bot.on('message', function(message) {
   }
 
   if (message.content.toLowerCase() === 'xqr' || message.content.toLowerCase() === '+xqr' || message.content.toLowerCase() === 'chair' || message.content.toLowerCase() === 'inval' || message.content.toLowerCase() === 'invalnorious') {
-    message.channel.send('noob');
+    message.channel.send('ma boi');
   }
     
   if (message.content.toLowerCase() === 'tr') {
