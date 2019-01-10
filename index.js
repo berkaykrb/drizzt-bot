@@ -95,6 +95,10 @@ bot.on('message', function(message) {
     message.channel.send('pro');
   }
 
+   if (message.content.toLowerCase() === 'xqr' || '+xqr' || 'chair' || 'inval' || 'invalnorious') {
+    message.channel.send('noob');
+  }
+    
   if (message.content.toLowerCase() === 'tr') {
     message.channel.send(':flag_tr:');
   }
