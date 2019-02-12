@@ -66,10 +66,6 @@ bot.on('message', function(message) {
   if (message.content.toLowerCase() === 'kylie' || message.content.toLowerCase() === 'lost' || message.content.toLowerCase() === 'lostwithdark') {
     message.channel.send('really noob');
   }
-
-  if (message.content.toLowerCase() === 'sythers' || message.content.toLowerCase() === 'olivia' || message.content.toLowerCase() === 'luhset') {
-    message.channel.send('big noob olivia');
-  }
     
   if (message.content.toLowerCase() === 'pro') {
     message.channel.send('who called Berk here?');
@@ -83,7 +79,7 @@ bot.on('message', function(message) {
     message.channel.send('pro');
   }
 
-  if (message.content.toLowerCase() === 'xqr' || message.content.toLowerCase() === '+xqr' || message.content.toLowerCase() === 'chair' || message.content.toLowerCase() === 'inval' || message.content.toLowerCase() === 'invalnorious') {
+  if (message.content.toLowerCase() === 'xqr' || message.content.toLowerCase() === '+xqr' || message.content.toLowerCase() === 'chair') {
     message.channel.send('ma boi');
   }
     
