@@ -63,7 +63,7 @@ bot.on('message', function(message) {
 	  let maleRole = message.guild.roles.get(process.env.MALEROLE_ID);
 	  let femaleRole = message.guild.roles.get(process.env.FEMALEROLE_ID);
 	  
-	  if (message.member.roles.has(maleRole.id)) 
+	  if (message.member.roles.has(femaleRole.id)) 
 	  {
 	      const guildMember = message.member;
 		  guildMember.removeRole(femaleRole.id)  
