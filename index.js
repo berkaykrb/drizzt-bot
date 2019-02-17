@@ -58,6 +58,57 @@ bot.on('message', function(message) {
     }
 
     }
+	
+  if (message.content === "!gender male") { 
+  {
+	  
+	  const guild = client.guilds.get(process.env.BOT_TOKEN);
+      const maleRole = guild.roles.find("name", "Male");
+	  const femaleRole = guild.roles.find("name", "Female");
+	  
+	  if (message.member.roles.has(maleRole.id)) 
+	  {
+	      const guildMember = message.member;
+		  guildMember.member.removeRole(femaleRole.id)  
+          guildMember.addRole(maleRole.id);
+	  }
+	  
+	  else if (message.member.roles.has(maleRole.id)) 
+	  {
+          message.channel.send("You already have this role.")
+      }
+		  
+      else 
+	  {
+          const guildMember = message.member;
+          guildMember.addRole(maleRole.id);
+      }
+  } 
+  
+  if (message.content === "!gender female") { 
+  {
+	  const guild = client.guilds.get(process.env.BOT_TOKEN);
+      const maleRole = guild.roles.find("name", "Male");
+	  const femaleRole = guild.roles.find("name", "Female");
+	  
+	  if (message.member.roles.has(maleRole.id)) 
+	  {
+	      const guildMember = message.member;
+		  guildMember.member.removeRole(maleRole.id)  
+          guildMember.addRole(femaleRole.id);
+	  }
+	  
+	  else if (message.member.roles.has(femaleRole.id)) 
+	  {
+          message.channel.send("You already have this role.")
+      }
+		  
+      else 
+	  {
+          const guildMember = message.member;
+          guildMember.addRole(femaleRole.id);
+      }
+  } 
 
   if (message.content.toLowerCase() === '!about') {
     message.channel.send('This bot was created for fun by **Berkayk#2525**');
