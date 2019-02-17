@@ -60,7 +60,6 @@ bot.on('message', function(message) {
     }
 	
   if (message.content === "!gender male") { 
-  {
 	  let maleRole = message.guild.roles.get(process.env.MALEROLE_ID);
 	  let femaleRole = message.guild.roles.get(process.env.FEMALEROLE_ID);
 	  
@@ -84,7 +83,6 @@ bot.on('message', function(message) {
   } 
   
   if (message.content === "!gender female") { 
-  {
 	  let maleRole = message.guild.roles.get(process.env.MALEROLE_ID);
 	  let femaleRole = message.guild.roles.get(process.env.FEMALEROLE_ID);
 	  
