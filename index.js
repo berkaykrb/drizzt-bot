@@ -68,17 +68,19 @@ bot.on('message', function(message) {
 	      const guildMember = message.member;
 		  guildMember.removeRole(femaleRole.id)  
           guildMember.addRole(maleRole.id);
+		  message.channel.send("You have acquired the gender role **Male**")
 	  }
 	  
 	  else if (message.member.roles.has(maleRole.id)) 
 	  {
-          message.channel.send("You already have this role.")
+          message.channel.send("You already have **Male** role.")
       }
 		  
       else 
 	  {
           const guildMember = message.member;
           guildMember.addRole(maleRole.id);
+		  message.channel.send("You have acquired the gender role **Male**")
       }
   } 
   
@@ -91,17 +93,19 @@ bot.on('message', function(message) {
 	      const guildMember = message.member;
 		  guildMember.removeRole(maleRole.id)  
           guildMember.addRole(femaleRole.id);
+		  message.channel.send("You have acquired the gender role **Female**")
 	  }
 	  
 	  else if (message.member.roles.has(femaleRole.id)) 
 	  {
-          message.channel.send("You already have this role.")
+          message.channel.send("You already have **Female** role.")
       }
 		  
       else 
 	  {
           const guildMember = message.member;
           guildMember.addRole(femaleRole.id);
+		  message.channel.send("You have acquired the gender role **Female**")
       }
   } 
 
