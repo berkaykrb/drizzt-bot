@@ -66,7 +66,7 @@ bot.on('message', function(message) {
 	  if (message.member.roles.has(maleRole.id)) 
 	  {
 	      const guildMember = message.member;
-		  guildMember.member.removeRole(femaleRole.id)  
+		  guildMember.removeRole(femaleRole.id)  
           guildMember.addRole(maleRole.id);
 	  }
 	  
@@ -89,7 +89,7 @@ bot.on('message', function(message) {
 	  if (message.member.roles.has(maleRole.id)) 
 	  {
 	      const guildMember = message.member;
-		  guildMember.member.removeRole(maleRole.id)  
+		  guildMember.removeRole(maleRole.id)  
           guildMember.addRole(femaleRole.id);
 	  }
 	  
