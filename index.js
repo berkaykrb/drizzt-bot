@@ -61,10 +61,8 @@ bot.on('message', function(message) {
 	
   if (message.content === "!gender male") { 
   {
-	  
-	  const guild = client.guilds.get(process.env.BOT_TOKEN);
-      const maleRole = guild.roles.find("name", "Male");
-	  const femaleRole = guild.roles.find("name", "Female");
+	  let maleRole = message.guild.roles.get(process.env.MALEROLE_ID);
+	  let femaleRole = message.guild.roles.get(process.env.FEMALEROLE_ID);
 	  
 	  if (message.member.roles.has(maleRole.id)) 
 	  {
@@ -87,9 +85,8 @@ bot.on('message', function(message) {
   
   if (message.content === "!gender female") { 
   {
-	  const guild = client.guilds.get(process.env.BOT_TOKEN);
-      const maleRole = guild.roles.find("name", "Male");
-	  const femaleRole = guild.roles.find("name", "Female");
+	  let maleRole = message.guild.roles.get(process.env.MALEROLE_ID);
+	  let femaleRole = message.guild.roles.get(process.env.FEMALEROLE_ID);
 	  
 	  if (message.member.roles.has(maleRole.id)) 
 	  {
