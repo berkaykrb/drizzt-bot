@@ -60,57 +60,109 @@ bot.on('message', function(message) {
     }
 	
   if (message.content === "!gender male") { 
-	  let maleRole = message.guild.roles.get(process.env.MALEROLE_ID);
+	 
+    let channelID = process.env.FS_BOTCHANNEL_ID.toString();
+
+  if (message.channel.id === channelID) {
+
+	 let maleRole = message.guild.roles.get(process.env.MALEROLE_ID);
 	  let femaleRole = message.guild.roles.get(process.env.FEMALEROLE_ID);
+	  const guildMember = message.member;
 	  
 	  if (message.member.roles.has(femaleRole.id)) 
 	  {
-	      const guildMember = message.member;
-		  guildMember.removeRole(femaleRole.id)  
+		  guildMember.removeRole(femaleRole.id);  
           guildMember.addRole(maleRole.id);
-		  message.channel.send("You have acquired the gender role **Male**")
+		  message.channel.send("You have acquired the gender role **Male**.")
 	  }
 	  
 	  else if (message.member.roles.has(maleRole.id)) 
 	  {
-          message.channel.send("You already have **Male** role.")
+          message.channel.send("You already have the **Male** role.")
       }
 		  
       else 
 	  {
-          const guildMember = message.member;
           guildMember.addRole(maleRole.id);
-		  message.channel.send("You have acquired the gender role **Male**")
+		  message.channel.send("You have acquired the gender role **Male**.")
       }
-  } 
-  
+	  
+	 }
+  else {
+	  message.channel.send("You cannot use this command in this channel.")
+       }
+    
+ } 
+
   if (message.content === "!gender female") { 
+  
+    let channelID = process.env.FS_BOTCHANNEL_ID.toString();
+
+  if (message.channel.id === channelID) {
+  
 	  let maleRole = message.guild.roles.get(process.env.MALEROLE_ID);
 	  let femaleRole = message.guild.roles.get(process.env.FEMALEROLE_ID);
+	  const guildMember = message.member;
 	  
 	  if (message.member.roles.has(maleRole.id)) 
 	  {
-	      const guildMember = message.member;
-		  guildMember.removeRole(maleRole.id)  
+		  guildMember.removeRole(maleRole.id);
           guildMember.addRole(femaleRole.id);
-		  message.channel.send("You have acquired the gender role **Female**")
+		  message.channel.send("You have acquired the gender role **Female**.")
 	  }
 	  
 	  else if (message.member.roles.has(femaleRole.id)) 
 	  {
-          message.channel.send("You already have **Female** role.")
+          message.channel.send("You already have the **Female** role.")
       }
 		  
       else 
 	  {
-          const guildMember = message.member;
           guildMember.addRole(femaleRole.id);
-		  message.channel.send("You have acquired the gender role **Female**")
+		  message.channel.send("You have acquired the gender role **Female**.")
       }
   } 
+  
+  else {
+	message.channel.send("You cannot use this command in this channel.")
+       }
 
+  }
+  
+  if (message.content === "!removegender") { 
+  
+    let channelID = process.env.FS_BOTCHANNEL_ID.toString();
+
+  if (message.channel.id === channelID) {
+  
+   let maleRole = message.guild.roles.get(process.env.MALEROLE_ID);
+   let femaleRole = message.guild.roles.get(process.env.FEMALEROLE_ID);
+   const guildMember = message.member;
+   
+   if (message.member.roles.has(maleRole.id)) 
+	  { 
+		guildMember.removeRole(maleRole.id); 
+		message.channel.send("Your role **Male** has been removed.")
+	  } 
+		  
+   else if (message.member.roles.has(femaleRole.id)) 
+	  {
+		guildMember.removeRole(femaleRole.id);
+		message.channel.send("Your role **Female** has been removed.")
+	  } 
+   else
+	  {
+	    message.channel.send("You have no role.")
+	  } 
+  } 
+  
+  else {
+	  message.channel.send("You cannot use this command in this channel.")
+       }
+  
+ } 
   if (message.content.toLowerCase() === '!about') {
-    message.channel.send('This bot was created for fun by **Berkayk#2525**');
+    message.channel.send('This bot was created for fun by **BerkayK#2525**');
   }
 
   if (message.content.toLowerCase() === 'kylie' || message.content.toLowerCase() === 'lost' || message.content.toLowerCase() === 'lostwithdark') {
